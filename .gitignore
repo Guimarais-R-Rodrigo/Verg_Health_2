@@ -1,0 +1,15 @@
+node_modules/
+public/
+dist/
+src/backend/static_assets.js
+src/frontend/verg_health_app.html
+*.sqlite
+*.sqlite-*
+*.log
+.env
+.env.*
+!.env.example
+reports/browser-artifacts/
+reports/browser-fixtures/
+__pycache__/
+.DS_Store
