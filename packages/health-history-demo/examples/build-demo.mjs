@@ -1,0 +1,10 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {renderSyntheticHistory} from '../src/synthetic-host.mjs';
+import {demo} from './fixtures.mjs';
+const css = await readFile(new URL('../../health-presentation/src/theme.css',import.meta.url),'utf8');
+const styleHash = createHash('sha256').update(css).digest('base64');
+const {html} = renderSyntheticHistory(demo);
+const document = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-${styleHash}'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Histórico inteiramente fictício · contrato independente</title><style>${css}</style></head><body><a class="skip" href="#conteudo">Pular para histórico</a>${html}</body></html>`;
+await writeFile(new URL('./synthetic-history.html',import.meta.url),document);
+console.log('Built invented fixture → adapter → public renderDashboard → synthetic-history.html');
