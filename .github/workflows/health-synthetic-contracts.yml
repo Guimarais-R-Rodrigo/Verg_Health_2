@@ -1,0 +1,31 @@
+# Bounded synthetic checks only; preserves the separate presentation workflow.
+name: health-synthetic-contracts
+on:
+  pull_request:
+    paths:
+      - 'packages/health-history-demo/**'
+      - 'packages/health-presentation/**'
+      - 'tools/structured-ocr-evaluation/**'
+      - '.github/workflows/health-synthetic-contracts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthetic-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24.19.0'
+      - name: Test structured synthetic evaluator and history host
+        run: node --test tools/structured-ocr-evaluation/tests/evaluate.test.mjs packages/health-history-demo/tests/history.test.mjs
+      - name: Rebuild synthetic history in disposable checkout
+        run: |
+          git ls-files --error-unmatch -- packages/health-history-demo/examples/synthetic-history.html
+          node packages/health-history-demo/examples/build-demo.mjs
+      - name: Verify checked-in synthetic history is reproducible
+        run: git diff --exit-code -- packages/health-history-demo/examples/synthetic-history.html
