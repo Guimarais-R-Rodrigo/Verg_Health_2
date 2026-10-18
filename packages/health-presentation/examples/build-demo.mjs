@@ -1,0 +1,14 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {resolve,dirname} from 'node:path';
+import {renderDashboard} from '../src/index.mjs';
+import {records} from './fixtures.mjs';
+const css=await readFile(new URL('../src/theme.css',import.meta.url),'utf8');
+const logo=await readFile(new URL('../src/logo.svg',import.meta.url),'utf8');
+const styleHash=createHash('sha256').update(css).digest('base64');
+const html=`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-${styleHash}'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>Verg Health · proposta consolidada</title><style>${css}</style></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><div class="shell"><aside class="identity">${logo}<strong>Verg Health</strong><span class="badge">DADOS FICTÍCIOS</span><p>Histórico e origem em uma visão.<br>Proposta visual em revisão.</p></aside>${renderDashboard({profile:'synthetic_demo',records})}</div></body></html>`;
+const outIndex=process.argv.indexOf('--out');
+if(outIndex>=0 && !process.argv[outIndex+1]) throw new Error('--out requires a file path');
+const destination=outIndex>=0?resolve(process.argv[outIndex+1]):new URL('./VergHealth-demo.html',import.meta.url);
+if(typeof destination==='string') await mkdir(dirname(destination),{recursive:true});
+await writeFile(destination,html,{flag:outIndex>=0?'wx':'w'});
