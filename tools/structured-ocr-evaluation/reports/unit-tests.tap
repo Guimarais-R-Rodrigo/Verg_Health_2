@@ -1,0 +1,214 @@
+TAP version 13
+# Subtest: smoke exposes wrong values, omissions, power-of-ten changes and false agreement
+ok 1 - smoke exposes wrong values, omissions, power-of-ten changes and false agreement
+  ---
+  duration_ms: 5.736165
+  type: 'test'
+  ...
+# Subtest: a perfect synthetic projection measures exact recall, never qualification
+ok 2 - a perfect synthetic projection measures exact recall, never qualification
+  ---
+  duration_ms: 1.528344
+  type: 'test'
+  ...
+# Subtest: empty output retains every expected denominator and every missing page
+ok 3 - empty output retains every expected denominator and every missing page
+  ---
+  duration_ms: 0.781027
+  type: 'test'
+  ...
+# Subtest: missing null-valued fields are omissions, never correct absence
+ok 4 - missing null-valued fields are omissions, never correct absence
+  ---
+  duration_ms: 1.493711
+  type: 'test'
+  ...
+# Subtest: zero is a value, null and missing are not zero
+ok 5 - zero is a value, null and missing are not zero
+  ---
+  duration_ms: 1.887254
+  type: 'test'
+  ...
+# Subtest: exact UTF-8-oriented strings: no micro-unit, whitespace or decimal text normalization
+ok 6 - exact UTF-8-oriented strings: no micro-unit, whitespace or decimal text normalization
+  ---
+  duration_ms: 2.442611
+  type: 'test'
+  ...
+# Subtest: numbers use strict equality, not epsilon; textual precision measured separately
+ok 7 - numbers use strict equality, not epsilon; textual precision measured separately
+  ---
+  duration_ms: 0.841869
+  type: 'test'
+  ...
+# Subtest: a missing truth field or unknown candidate field cannot disappear silently
+ok 8 - a missing truth field or unknown candidate field cannot disappear silently
+  ---
+  duration_ms: 1.264937
+  type: 'test'
+  ...
+# Subtest: unscored truth requires a reason and does not count as correct
+ok 9 - unscored truth requires a reason and does not count as correct
+  ---
+  duration_ms: 0.980348
+  type: 'test'
+  ...
+# Subtest: duplicate candidate and truth record identities are rejected
+ok 10 - duplicate candidate and truth record identities are rejected
+  ---
+  duration_ms: 1.156913
+  type: 'test'
+  ...
+# Subtest: duplicate original locations with different IDs cannot double count
+ok 11 - duplicate original locations with different IDs cannot double count
+  ---
+  duration_ms: 0.500744
+  type: 'test'
+  ...
+# Subtest: unmatched candidate record counted as extra, not matched by value/name
+ok 12 - unmatched candidate record counted as extra, not matched by value/name
+  ---
+  duration_ms: 0.651151
+  type: 'test'
+  ...
+# Subtest: wrong page association prevents correct values from receiving credit
+ok 13 - wrong page association prevents correct values from receiving credit
+  ---
+  duration_ms: 0.787337
+  type: 'test'
+  ...
+# Subtest: record on failed or missing page cannot be scored
+ok 14 - record on failed or missing page cannot be scored
+  ---
+  duration_ms: 0.459232
+  type: 'test'
+  ...
+# Subtest: false complete, incoherent partial and error output are rejected
+ok 15 - false complete, incoherent partial and error output are rejected
+  ---
+  duration_ms: 0.976211
+  type: 'test'
+  ...
+# Subtest: unknown source, suite, run and reused attempt identities block scoring
+ok 16 - unknown source, suite, run and reused attempt identities block scoring
+  ---
+  duration_ms: 1.859503
+  type: 'test'
+  ...
+# Subtest: missing engine metadata and version changes do not produce accuracy scores
+ok 17 - missing engine metadata and version changes do not produce accuracy scores
+  ---
+  duration_ms: 2.01017
+  type: 'test'
+  ...
+# Subtest: comparison missing field, matching null, and both missing never become agreement correctness
+ok 18 - comparison missing field, matching null, and both missing never become agreement correctness
+  ---
+  duration_ms: 1.029472
+  type: 'test'
+  ...
+# Subtest: confidence changes never change scoring, review decisions never certify truth
+ok 19 - confidence changes never change scoring, review decisions never certify truth
+  ---
+  duration_ms: 1.973064
+  type: 'test'
+  ...
+# Subtest: review evidence mismatch and remapping original associations are rejected
+ok 20 - review evidence mismatch and remapping original associations are rejected
+  ---
+  duration_ms: 1.139557
+  type: 'test'
+  ...
+# Subtest: selectively reviewed cases retain other cases as not measured, not correct
+ok 21 - selectively reviewed cases retain other cases as not measured, not correct
+  ---
+  duration_ms: 0.928189
+  type: 'test'
+  ...
+# Subtest: zero review time recorded separately from absent timing
+ok 22 - zero review time recorded separately from absent timing
+  ---
+  duration_ms: 1.096072
+  type: 'test'
+  ...
+# Subtest: numeric strings and nonfinite numbers are rejected, no coercion
+ok 23 - numeric strings and nonfinite numbers are rejected, no coercion
+  ---
+  duration_ms: 0.978775
+  type: 'test'
+  ...
+# Subtest: relabelling smoke as holdout is blocked by exposure registry
+ok 24 - relabelling smoke as holdout is blocked by exposure registry
+  ---
+  duration_ms: 0.61075
+  type: 'test'
+  ...
+# Subtest: family variants and renamed identical bytes are contaminated
+ok 25 - family variants and renamed identical bytes are contaminated
+  ---
+  duration_ms: 1.321151
+  type: 'test'
+  ...
+# Subtest: holdout requires exact frozen truth, pipeline and pre-run registration
+ok 26 - holdout requires exact frozen truth, pipeline and pre-run registration
+  ---
+  duration_ms: 1.523506
+  type: 'test'
+  ...
+# Subtest: registry declarations can make input admissible but never prove blindness/qualification
+ok 27 - registry declarations can make input admissible but never prove blindness/qualification
+  ---
+  duration_ms: 1.135973
+  type: 'test'
+  ...
+# Subtest: evaluation does not mutate input artifacts
+ok 28 - evaluation does not mutate input artifacts
+  ---
+  duration_ms: 1.722607
+  type: 'test'
+  ...
+# Subtest: count partitions reconcile for both measured layers
+ok 29 - count partitions reconcile for both measured layers
+  ---
+  duration_ms: 1.285637
+  type: 'test'
+  ...
+# Subtest: matching unsupported versions cannot evade contract pins
+ok 30 - matching unsupported versions cannot evade contract pins
+  ---
+  duration_ms: 0.658593
+  type: 'test'
+  ...
+# Subtest: timestamps reject calendar rollover and candidates before truth freeze
+ok 31 - timestamps reject calendar rollover and candidates before truth freeze
+  ---
+  duration_ms: 1.090124
+  type: 'test'
+  ...
+# Subtest: unsafe integers and duplicate JSON keys cannot silently lose information
+ok 32 - unsafe integers and duplicate JSON keys cannot silently lose information
+  ---
+  duration_ms: 1.11497
+  type: 'test'
+  ...
+# Subtest: initial and latest snapshot pending counts are distinguished
+ok 33 - initial and latest snapshot pending counts are distinguished
+  ---
+  duration_ms: 0.908289
+  type: 'test'
+  ...
+# Subtest: ground truth comparators are symbolic and result types use current contract enums
+ok 34 - ground truth comparators are symbolic and result types use current contract enums
+  ---
+  duration_ms: 1.334961
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 138.284528

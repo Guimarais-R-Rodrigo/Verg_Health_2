@@ -1,0 +1,23 @@
+name: health-presentation
+on:
+  pull_request:
+    paths:
+      - 'packages/health-presentation/**'
+      - 'visual/layout-proposals/**'
+      - '.github/workflows/health-presentation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  presentation-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test isolated presentation with fictional data
+        run: node --test packages/health-presentation/tests/*.test.mjs
+      - name: Build fictional preview only
+        run: node packages/health-presentation/examples/build-demo.mjs --out "${{ runner.temp }}/health-presentation.html"

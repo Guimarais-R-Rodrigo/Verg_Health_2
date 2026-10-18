@@ -1,0 +1,9 @@
+{
+  "name": "@verg/health-presentation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.mjs",
+  "scripts": {"test": "node --test tests/*.test.mjs", "build:demo": "node examples/build-demo.mjs"},
+  "engines": {"node": ">=20"}
+}

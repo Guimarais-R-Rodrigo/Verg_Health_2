@@ -1,0 +1,798 @@
+{
+  "schemaVersion": "health-structured-evaluation-1",
+  "suiteId": "smoke-20261018",
+  "split": "developer_smoke",
+  "qualification": "NOT_QUALIFIED_FOR_CLINICAL_OR_PRODUCTION_OCR",
+  "evidenceKind": "synthetic_structured_record_comparison_only",
+  "acceptanceDecision": "NOT_DEFINED_NO_NUMERICAL_RELEASE_TARGET",
+  "truthSha256": "7fdae6185d35a936000458dd95615ea22f5481066f0a818297a201c81d7cc28d",
+  "candidateSha256": "894e3000d8488a8c291b43cf4dbae4ef167c3b19af439d40ccbad3a6e8402c46",
+  "pipelineSha256": "36d2062336fc575d26073761e689413454621a83fd0aae51c2bf63d281c42aca",
+  "registrySha256": "ef37bcf02270d21bc18d1f0f9f3da30069790a58d74034b939ae25ce91d49cdc",
+  "identity": {
+    "appVersion": "3.2.2",
+    "sourceManifestSha256": "c0b32f28d73eb5d12c53b237e56f9593d1bb1cfd207f39018acf118fb9290ef1",
+    "structurerVersion": "geometry-0.3.0-health-v1",
+    "catalogVersion": "1.0.0-synthetic",
+    "runSchemaVersion": "1",
+    "draftSchemaVersion": "1.0.0",
+    "effectiveConfigSha256": "853a0ad9c301673a2cbc507340bd58378ea2e2d9baf9ac4854f4a24b78c57957",
+    "adapter": {
+      "id": "structured-record-fixture",
+      "version": "1"
+    },
+    "engines": [
+      {
+        "id": "fixture-only-no-ocr",
+        "version": "1",
+        "models": []
+      }
+    ]
+  },
+  "pageCoverage": {
+    "expected": 4,
+    "completed": 3,
+    "failed": 0,
+    "pending": 0,
+    "cancelled": 0,
+    "missing": 1
+  },
+  "extracted": {
+    "totals": {
+      "expectedValues": 35,
+      "expectedAbsences": 12,
+      "unscored": 1,
+      "correctValues": 20,
+      "correctAbsences": 7,
+      "missingFields": 12,
+      "abstainedValues": 1,
+      "wrongValues": 7,
+      "wrongAbsences": 0,
+      "wrongAssociation": 0,
+      "notMeasured": 0
+    },
+    "byField": {
+      "biomarkerCode": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 3,
+        "correctAbsences": 0,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "biomarkerName": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 3,
+        "correctAbsences": 0,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "collectionDate": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 2,
+        "correctAbsences": 0,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 1,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "valueRaw": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 2,
+        "correctAbsences": 0,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 1,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "valueNumeric": {
+        "expectedValues": 3,
+        "expectedAbsences": 1,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 1,
+        "abstainedValues": 1,
+        "wrongValues": 1,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "resultType": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 3,
+        "correctAbsences": 0,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "valueQualitative": {
+        "expectedValues": 1,
+        "expectedAbsences": 3,
+        "unscored": 0,
+        "correctValues": 0,
+        "correctAbsences": 3,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "comparator": {
+        "expectedValues": 3,
+        "expectedAbsences": 1,
+        "unscored": 0,
+        "correctValues": 2,
+        "correctAbsences": 0,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 1,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "unit": {
+        "expectedValues": 3,
+        "expectedAbsences": 1,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 2,
+        "abstainedValues": 0,
+        "wrongValues": 1,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "refText": {
+        "expectedValues": 2,
+        "expectedAbsences": 1,
+        "unscored": 1,
+        "correctValues": 1,
+        "correctAbsences": 1,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 1,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "refMin": {
+        "expectedValues": 1,
+        "expectedAbsences": 3,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 2,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      },
+      "refMax": {
+        "expectedValues": 2,
+        "expectedAbsences": 2,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 1,
+        "missingFields": 1,
+        "abstainedValues": 0,
+        "wrongValues": 1,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 0
+      }
+    },
+    "recordsExpected": 4,
+    "recordsMatched": 3,
+    "recordsMissing": 1,
+    "recordsNotMeasured": 0,
+    "extraRecords": 0,
+    "documentsNotMeasured": 0,
+    "recordsWithAnyMismatch": 4,
+    "recordsWithAllScoredFieldsCorrect": 0,
+    "numericPowerOfTenMismatches": 2,
+    "mismatches": [
+      {
+        "caseId": "synthetic-case-1",
+        "recordId": "row-1",
+        "field": "valueRaw",
+        "outcome": "wrongValues"
+      },
+      {
+        "caseId": "synthetic-case-1",
+        "recordId": "row-1",
+        "field": "valueNumeric",
+        "outcome": "wrongValues"
+      },
+      {
+        "caseId": "synthetic-case-1",
+        "recordId": "row-1",
+        "field": "unit",
+        "outcome": "wrongValues"
+      },
+      {
+        "caseId": "synthetic-case-1",
+        "recordId": "row-1",
+        "field": "refText",
+        "outcome": "wrongValues"
+      },
+      {
+        "caseId": "synthetic-case-1",
+        "recordId": "row-1",
+        "field": "refMax",
+        "outcome": "wrongValues"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "collectionDate",
+        "outcome": "wrongValues"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "comparator",
+        "outcome": "wrongValues"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "unit",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "valueNumeric",
+        "outcome": "abstainedValues"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "biomarkerCode",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "biomarkerName",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "collectionDate",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "valueRaw",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "valueNumeric",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "resultType",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "valueQualitative",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "comparator",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "unit",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "refMin",
+        "outcome": "missingFields"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "refMax",
+        "outcome": "missingFields"
+      }
+    ],
+    "exactValueRecall": {
+      "numerator": 20,
+      "denominator": 35,
+      "value": 0.5714285714285714
+    },
+    "explicitAbsenceMatch": {
+      "numerator": 7,
+      "denominator": 12,
+      "value": 0.5833333333333334
+    }
+  },
+  "reviewed": {
+    "totals": {
+      "expectedValues": 35,
+      "expectedAbsences": 12,
+      "unscored": 1,
+      "correctValues": 11,
+      "correctAbsences": 1,
+      "missingFields": 0,
+      "abstainedValues": 0,
+      "wrongValues": 0,
+      "wrongAbsences": 0,
+      "wrongAssociation": 0,
+      "notMeasured": 35
+    },
+    "byField": {
+      "biomarkerCode": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "biomarkerName": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "collectionDate": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "valueRaw": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "valueNumeric": {
+        "expectedValues": 3,
+        "expectedAbsences": 1,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "resultType": {
+        "expectedValues": 4,
+        "expectedAbsences": 0,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "valueQualitative": {
+        "expectedValues": 1,
+        "expectedAbsences": 3,
+        "unscored": 0,
+        "correctValues": 0,
+        "correctAbsences": 1,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "comparator": {
+        "expectedValues": 3,
+        "expectedAbsences": 1,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "unit": {
+        "expectedValues": 3,
+        "expectedAbsences": 1,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "refText": {
+        "expectedValues": 2,
+        "expectedAbsences": 1,
+        "unscored": 1,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 2
+      },
+      "refMin": {
+        "expectedValues": 1,
+        "expectedAbsences": 3,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      },
+      "refMax": {
+        "expectedValues": 2,
+        "expectedAbsences": 2,
+        "unscored": 0,
+        "correctValues": 1,
+        "correctAbsences": 0,
+        "missingFields": 0,
+        "abstainedValues": 0,
+        "wrongValues": 0,
+        "wrongAbsences": 0,
+        "wrongAssociation": 0,
+        "notMeasured": 3
+      }
+    },
+    "recordsExpected": 4,
+    "recordsMatched": 1,
+    "recordsMissing": 0,
+    "recordsNotMeasured": 3,
+    "extraRecords": 0,
+    "documentsNotMeasured": 3,
+    "recordsWithAnyMismatch": 3,
+    "recordsWithAllScoredFieldsCorrect": 1,
+    "numericPowerOfTenMismatches": 0,
+    "mismatches": [
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "biomarkerCode",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "biomarkerName",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "collectionDate",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "valueRaw",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "valueNumeric",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "resultType",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "valueQualitative",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "comparator",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "unit",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "refText",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "refMin",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-2",
+        "recordId": "row-2",
+        "field": "refMax",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "biomarkerCode",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "biomarkerName",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "collectionDate",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "valueRaw",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "valueNumeric",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "resultType",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "valueQualitative",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "comparator",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "unit",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "refText",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "refMin",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-3",
+        "recordId": "row-3",
+        "field": "refMax",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "biomarkerCode",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "biomarkerName",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "collectionDate",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "valueRaw",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "valueNumeric",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "resultType",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "valueQualitative",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "comparator",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "unit",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "refMin",
+        "outcome": "notMeasured"
+      },
+      {
+        "caseId": "synthetic-case-4",
+        "recordId": "row-4",
+        "field": "refMax",
+        "outcome": "notMeasured"
+      }
+    ],
+    "exactValueRecall": {
+      "numerator": 11,
+      "denominator": 35,
+      "value": 0.3142857142857143
+    },
+    "explicitAbsenceMatch": {
+      "numerator": 1,
+      "denominator": 12,
+      "value": 0.08333333333333333
+    }
+  },
+  "agreement": {
+    "documentsWithComparison": 1,
+    "jointlyPresentScoredFields": 12,
+    "sameCorrectFields": 7,
+    "sameWrongFields": 5,
+    "sameAbstentions": 0,
+    "bothMissingFields": 0,
+    "oneMissingField": 0,
+    "differentFields": 0,
+    "associationMismatchFields": 0,
+    "unscoredFields": 0,
+    "falseAgreementFraction": {
+      "numerator": 5,
+      "denominator": 12,
+      "value": 0.4166666666666667
+    }
+  },
+  "reviewWorkload": {
+    "documentsWithReview": 1,
+    "documentsWithoutReview": 3,
+    "initialPendingRecords": 3,
+    "latestSnapshotPendingRecords": 2,
+    "reviewedApprove": 1,
+    "reviewedReject": 0,
+    "reviewedPending": 0,
+    "correctionFieldEdits": 5,
+    "recordsAddedDuringReview": 0,
+    "recordsRemovedDuringReview": 0,
+    "elapsedMsRecorded": 0,
+    "documentsWithTiming": 0,
+    "documentsWithoutTiming": 1
+  },
+  "limitations": [
+    "No OCR inference or source-document decoding.",
+    "Record alignment is externally adjudicated; stable IDs do not prove correct association.",
+    "Exact strings and finite IEEE-754 JSON numbers only; no normalization, tolerance, conversion or medical interpretation. Unsafe integers are rejected; decimal spelling/precision belongs to literal fields.",
+    "Hashes and split declarations are integrity metadata, not authenticated independence or provenance.",
+    "Confidence and review decisions never establish correctness.",
+    "No product-schema validation, review authorization, promotion or sidecar validation."
+  ]
+}
