@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "health-structured-evaluation-1",
+  "suiteId": "smoke-20261018",
+  "split": "developer_smoke",
+  "synthetic": true,
+  "truthOrigin": "manual_synthetic_developer",
+  "truthFrozenAt": "2026-10-18T10:30:00Z",
+  "pipeline": {
+    "appVersion": "3.2.2",
+    "sourceManifestSha256": "c0b32f28d73eb5d12c53b237e56f9593d1bb1cfd207f39018acf118fb9290ef1",
+    "structurerVersion": "geometry-0.3.0-health-v1",
+    "catalogVersion": "1.0.0-synthetic",
+    "runSchemaVersion": "1",
+    "draftSchemaVersion": "1.0.0",
+    "effectiveConfigSha256": "853a0ad9c301673a2cbc507340bd58378ea2e2d9baf9ac4854f4a24b78c57957",
+    "adapter": {
+      "id": "structured-record-fixture",
+      "version": "1"
+    },
+    "engines": [
+      {
+        "id": "fixture-only-no-ocr",
+        "version": "1",
+        "models": []
+      }
+    ]
+  },
+  "cases": [
+    {
+      "caseId": "synthetic-case-1",
+      "familyId": "synthetic-family-1",
+      "sourceSha256": "bb9d8930be0ccfebfe1c1fdcd30c401b9d9cf81d14b4d9025ea5ccf6b47cd666",
+      "expectedPages": 1,
+      "records": [
+        {
+          "recordId": "row-1",
+          "pageNumber": 1,
+          "fields": {
+            "biomarkerCode": {
+              "state": "value",
+              "value": "SYNTH_ALPHA"
+            },
+            "biomarkerName": {
+              "state": "value",
+              "value": "Marcador fictício Alfa"
+            },
+            "collectionDate": {
+              "state": "value",
+              "value": "2026-10-01"
+            },
+            "valueRaw": {
+              "state": "value",
+              "value": "1,25"
+            },
+            "valueNumeric": {
+              "state": "value",
+              "value": 1.25
+            },
+            "resultType": {
+              "state": "value",
+              "value": "NUMERIC"
+            },
+            "valueQualitative": {
+              "state": "absent",
+              "value": null
+            },
+            "comparator": {
+              "state": "value",
+              "value": "="
+            },
+            "unit": {
+              "state": "value",
+              "value": "µg/L"
+            },
+            "refText": {
+              "state": "value",
+              "value": "0,50 a 2,00"
+            },
+            "refMin": {
+              "state": "value",
+              "value": 0.5
+            },
+            "refMax": {
+              "state": "value",
+              "value": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "caseId": "synthetic-case-2",
+      "familyId": "synthetic-family-2",
+      "sourceSha256": "553c28671da1602d00e45ec927bbd2340f710edfcb1d29c66947d3ded1d6d80d",
+      "expectedPages": 1,
+      "records": [
+        {
+          "recordId": "row-2",
+          "pageNumber": 1,
+          "fields": {
+            "biomarkerCode": {
+              "state": "value",
+              "value": "SYNTH_BETA"
+            },
+            "biomarkerName": {
+              "state": "value",
+              "value": "Marcador fictício Beta"
+            },
+            "collectionDate": {
+              "state": "value",
+              "value": "2026-10-01"
+            },
+            "valueRaw": {
+              "state": "value",
+              "value": "< 0,05"
+            },
+            "valueNumeric": {
+              "state": "value",
+              "value": 0.05
+            },
+            "resultType": {
+              "state": "value",
+              "value": "COMPARATOR"
+            },
+            "valueQualitative": {
+              "state": "absent",
+              "value": null
+            },
+            "comparator": {
+              "state": "value",
+              "value": "<"
+            },
+            "unit": {
+              "state": "value",
+              "value": "mg/L"
+            },
+            "refText": {
+              "state": "value",
+              "value": "inferior a 0,10"
+            },
+            "refMin": {
+              "state": "absent",
+              "value": null
+            },
+            "refMax": {
+              "state": "value",
+              "value": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "caseId": "synthetic-case-3",
+      "familyId": "synthetic-family-3",
+      "sourceSha256": "9aa401f2f8b95147d9d9abb7705b9befa55cd75d5738fc1fd28d4c2dba2b8670",
+      "expectedPages": 1,
+      "records": [
+        {
+          "recordId": "row-3",
+          "pageNumber": 1,
+          "fields": {
+            "biomarkerCode": {
+              "state": "value",
+              "value": "SYNTH_ZERO"
+            },
+            "biomarkerName": {
+              "state": "value",
+              "value": "Marcador fictício Zero"
+            },
+            "collectionDate": {
+              "state": "value",
+              "value": "2026-10-02"
+            },
+            "valueRaw": {
+              "state": "value",
+              "value": "0"
+            },
+            "valueNumeric": {
+              "state": "value",
+              "value": 0
+            },
+            "resultType": {
+              "state": "value",
+              "value": "NUMERIC"
+            },
+            "valueQualitative": {
+              "state": "absent",
+              "value": null
+            },
+            "comparator": {
+              "state": "value",
+              "value": "="
+            },
+            "unit": {
+              "state": "value",
+              "value": "U/L"
+            },
+            "refText": {
+              "state": "absent",
+              "value": null
+            },
+            "refMin": {
+              "state": "absent",
+              "value": null
+            },
+            "refMax": {
+              "state": "absent",
+              "value": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "caseId": "synthetic-case-4",
+      "familyId": "synthetic-family-4",
+      "sourceSha256": "1e935269797437fecd9edaabc21ea6edc6a8df170ac6bb5fe64a6d8c538a3248",
+      "expectedPages": 1,
+      "records": [
+        {
+          "recordId": "row-4",
+          "pageNumber": 1,
+          "fields": {
+            "biomarkerCode": {
+              "state": "value",
+              "value": "SYNTH_QUAL"
+            },
+            "biomarkerName": {
+              "state": "value",
+              "value": "Marcador fictício Qual"
+            },
+            "collectionDate": {
+              "state": "value",
+              "value": "2026-10-03"
+            },
+            "valueRaw": {
+              "state": "value",
+              "value": "não detectado"
+            },
+            "valueNumeric": {
+              "state": "absent",
+              "value": null
+            },
+            "resultType": {
+              "state": "value",
+              "value": "QUALITATIVE"
+            },
+            "valueQualitative": {
+              "state": "value",
+              "value": "não detectado"
+            },
+            "comparator": {
+              "state": "absent",
+              "value": null
+            },
+            "unit": {
+              "state": "absent",
+              "value": null
+            },
+            "refText": {
+              "state": "unscored",
+              "reason": "Deliberately unadjudicated synthetic expectation to test denominator disclosure."
+            },
+            "refMin": {
+              "state": "absent",
+              "value": null
+            },
+            "refMax": {
+              "state": "absent",
+              "value": null
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

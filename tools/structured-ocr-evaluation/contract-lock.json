@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "health-structured-evaluation-1",
+  "release": "3.2.2 source-and-approved-fixtures-v3",
+  "checkedAt": "2026-10-18",
+  "copiedProductCode": false,
+  "files": [
+    {
+      "path": "package.json",
+      "bytes": 6632,
+      "sha256": "93cdcd5d1bf238a4b40311becf77c02eed731b4fc5993e1cf15a54b8b7963170"
+    },
+    {
+      "path": "PUBLICATION_MANIFEST.json",
+      "bytes": 130516,
+      "sha256": "c0b32f28d73eb5d12c53b237e56f9593d1bb1cfd207f39018acf118fb9290ef1"
+    },
+    {
+      "path": "src/ocr/structure_current.js",
+      "bytes": 1325,
+      "sha256": "ff1b0808ef1b402ab4e63571b69ab2392ee6280a6584c04461fce1b648d79fe1"
+    },
+    {
+      "path": "src/ocr/structure_versions.js",
+      "bytes": 1125,
+      "sha256": "4b543cc6544bf35bc0619b89fd7053b4ca728f7015c068e65725af90d85f62ab"
+    },
+    {
+      "path": "src/ocr/structure.js",
+      "bytes": 41276,
+      "sha256": "c695535228234569c7cb6137489ccf35ec4b688c80735a9f0abf49d5eeae9eaa"
+    },
+    {
+      "path": "src/ocr/structure_v1_2_0.js",
+      "bytes": 40062,
+      "sha256": "530fca1583e2ec69968eedf62d0c134af724cead226df4c66e69cdecb343f8e1"
+    },
+    {
+      "path": "src/ocr/catalog.js",
+      "bytes": 3193,
+      "sha256": "f0046410bbd17489c6118664caf1a0ea7723af940357446cef6e190a8412ee14"
+    },
+    {
+      "path": "src/ocr/structure_geometric_health.js",
+      "bytes": 23455,
+      "sha256": "9b53426ea9c919facfb4b7273c8b1b17b7e2d4b3abb3e563be6d1e084c992cf2"
+    },
+    {
+      "path": "src/backend/extraction_api.js",
+      "bytes": 42634,
+      "sha256": "fc50401fe389ef06f606a9d188fa6b161913894b5fb39025bb0bcf3cac23000f"
+    },
+    {
+      "path": "src/shared/lab_parser_v2.js",
+      "bytes": 23206,
+      "sha256": "9774666937e9405fbee9174c1ce99ca4fe8f06e09edd19b76a970e5557776732"
+    },
+    {
+      "path": "src/local/exam_draft.mjs",
+      "bytes": 16428,
+      "sha256": "1c4a07ffce787a5b68ab3cbbaa03f25531dc2219cda0610fa00eb3de3502ec02"
+    },
+    {
+      "path": "src/local/document_observation.mjs",
+      "bytes": 7355,
+      "sha256": "5b63ef908988954ba73fdf85e4cb864e6c59a23517a67830c223f3101ec37be9"
+    },
+    {
+      "path": "contracts/document-observation/document-observation.schema.json",
+      "bytes": 11580,
+      "sha256": "6a79e6db7e89990580a5f5e72ead04bcb756db2574d7fd350fd88ac58fe17470"
+    },
+    {
+      "path": "contracts/document-observation/HEALTH_ADOPTION.txt",
+      "bytes": 4686,
+      "sha256": "161e6cb67032c693d6974febfba8a3367ba8a6c14dc524d258cb0cd512cbd022"
+    }
+  ],
+  "logicalSource": "health-3.2.2-v3-functional-source"
+}

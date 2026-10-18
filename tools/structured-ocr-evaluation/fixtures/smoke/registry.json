@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "health-structured-evaluation-1",
+  "developerExposure": [
+    {
+      "caseId": "synthetic-case-1",
+      "familyId": "synthetic-family-1",
+      "sourceSha256": "bb9d8930be0ccfebfe1c1fdcd30c401b9d9cf81d14b4d9025ea5ccf6b47cd666"
+    },
+    {
+      "caseId": "synthetic-case-2",
+      "familyId": "synthetic-family-2",
+      "sourceSha256": "553c28671da1602d00e45ec927bbd2340f710edfcb1d29c66947d3ded1d6d80d"
+    },
+    {
+      "caseId": "synthetic-case-3",
+      "familyId": "synthetic-family-3",
+      "sourceSha256": "9aa401f2f8b95147d9d9abb7705b9befa55cd75d5738fc1fd28d4c2dba2b8670"
+    },
+    {
+      "caseId": "synthetic-case-4",
+      "familyId": "synthetic-family-4",
+      "sourceSha256": "1e935269797437fecd9edaabc21ea6edc6a8df170ac6bb5fe64a6d8c538a3248"
+    }
+  ],
+  "frozenHoldouts": []
+}

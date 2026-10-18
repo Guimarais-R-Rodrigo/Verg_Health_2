@@ -1,0 +1,79 @@
+{
+  "scope": "Read-only hash checks of listed source text and schema files only. No product execution; no fixture/document bytes read.",
+  "logicalSources": [
+    "health-3.2.2-v3-functional-source",
+    "health-3.2.2-v3-functional-audit-copy"
+  ],
+  "files": [
+    {
+      "path": "package.json",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "PUBLICATION_MANIFEST.json",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/ocr/structure_current.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/ocr/structure_versions.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/ocr/structure.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/ocr/structure_v1_2_0.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/ocr/catalog.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/ocr/structure_geometric_health.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/backend/extraction_api.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/shared/lab_parser_v2.js",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/local/exam_draft.mjs",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "src/local/document_observation.mjs",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "contracts/document-observation/document-observation.schema.json",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    },
+    {
+      "path": "contracts/document-observation/HEALTH_ADOPTION.txt",
+      "candidateMatchesRecorded": true,
+      "functionalAuditCopyMatches": true
+    }
+  ]
+}

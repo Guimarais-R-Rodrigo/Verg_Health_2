@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "health-structured-evaluation-1",
+  "suiteId": "smoke-20261018",
+  "synthetic": true,
+  "generatedAt": "2026-10-18T10:31:00Z",
+  "pipeline": {
+    "appVersion": "3.2.2",
+    "sourceManifestSha256": "c0b32f28d73eb5d12c53b237e56f9593d1bb1cfd207f39018acf118fb9290ef1",
+    "structurerVersion": "geometry-0.3.0-health-v1",
+    "catalogVersion": "1.0.0-synthetic",
+    "runSchemaVersion": "1",
+    "draftSchemaVersion": "1.0.0",
+    "effectiveConfigSha256": "853a0ad9c301673a2cbc507340bd58378ea2e2d9baf9ac4854f4a24b78c57957",
+    "adapter": {
+      "id": "structured-record-fixture",
+      "version": "1"
+    },
+    "engines": [
+      {
+        "id": "fixture-only-no-ocr",
+        "version": "1",
+        "models": []
+      }
+    ]
+  },
+  "runs": [
+    {
+      "caseId": "synthetic-case-1",
+      "sourceSha256": "bb9d8930be0ccfebfe1c1fdcd30c401b9d9cf81d14b4d9025ea5ccf6b47cd666",
+      "attemptId": "synthetic-attempt-1",
+      "evidenceDigest": "b21a870030fef84206d17fe991c3cdb800d5c703701b17dc08778d2065a4ed6a",
+      "status": "review_ready",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "status": "completed"
+        }
+      ],
+      "records": [
+        {
+          "recordId": "row-1",
+          "pageNumber": 1,
+          "associationLocation": {
+            "groupIndex": 0,
+            "candidateIndex": 0
+          },
+          "values": {
+            "biomarkerCode": "SYNTH_ALPHA",
+            "biomarkerName": "Marcador fictício Alfa",
+            "collectionDate": "2026-10-01",
+            "valueRaw": "12,5",
+            "valueNumeric": 12.5,
+            "resultType": "NUMERIC",
+            "valueQualitative": null,
+            "comparator": "=",
+            "unit": "μg/L",
+            "refText": "0,50 a 20,00",
+            "refMin": 0.5,
+            "refMax": 20
+          },
+          "review_decision": "PENDING",
+          "confidence": 99
+        }
+      ],
+      "comparison": {
+        "attemptId": "synthetic-comparison-1",
+        "sourceSha256": "bb9d8930be0ccfebfe1c1fdcd30c401b9d9cf81d14b4d9025ea5ccf6b47cd666",
+        "pipeline": {
+          "appVersion": "3.2.2",
+          "sourceManifestSha256": "c0b32f28d73eb5d12c53b237e56f9593d1bb1cfd207f39018acf118fb9290ef1",
+          "structurerVersion": "geometry-0.3.0-health-v1",
+          "catalogVersion": "1.0.0-synthetic",
+          "runSchemaVersion": "1",
+          "draftSchemaVersion": "1.0.0",
+          "effectiveConfigSha256": "853a0ad9c301673a2cbc507340bd58378ea2e2d9baf9ac4854f4a24b78c57957",
+          "adapter": {
+            "id": "secondary-fixture",
+            "version": "1"
+          },
+          "engines": [
+            {
+              "id": "fixture-only-no-ocr",
+              "version": "1",
+              "models": []
+            }
+          ]
+        },
+        "records": [
+          {
+            "recordId": "row-1",
+            "pageNumber": 1,
+            "associationLocation": {
+              "groupIndex": 0,
+              "candidateIndex": 0
+            },
+            "values": {
+              "biomarkerCode": "SYNTH_ALPHA",
+              "biomarkerName": "Marcador fictício Alfa",
+              "collectionDate": "2026-10-01",
+              "valueRaw": "12,5",
+              "valueNumeric": 12.5,
+              "resultType": "NUMERIC",
+              "valueQualitative": null,
+              "comparator": "=",
+              "unit": "μg/L",
+              "refText": "0,50 a 20,00",
+              "refMin": 0.5,
+              "refMax": 20
+            },
+            "review_decision": "PENDING",
+            "confidence": 99
+          }
+        ]
+      },
+      "reviewed": {
+        "revisionVersion": 2,
+        "reviewHash": "91e44c5c6ba97e9e20adf5e7c981dedeffed64cb760da2f06b4c515757cc85dc",
+        "evidenceDigest": "b21a870030fef84206d17fe991c3cdb800d5c703701b17dc08778d2065a4ed6a",
+        "elapsedMs": null,
+        "records": [
+          {
+            "recordId": "row-1",
+            "pageNumber": 1,
+            "associationLocation": {
+              "groupIndex": 0,
+              "candidateIndex": 0
+            },
+            "values": {
+              "biomarkerCode": "SYNTH_ALPHA",
+              "biomarkerName": "Marcador fictício Alfa",
+              "collectionDate": "2026-10-01",
+              "valueRaw": "1,25",
+              "valueNumeric": 1.25,
+              "resultType": "NUMERIC",
+              "valueQualitative": null,
+              "comparator": "=",
+              "unit": "µg/L",
+              "refText": "0,50 a 2,00",
+              "refMin": 0.5,
+              "refMax": 2
+            },
+            "review_decision": "APPROVE",
+            "confidence": 99
+          }
+        ]
+      }
+    },
+    {
+      "caseId": "synthetic-case-2",
+      "sourceSha256": "553c28671da1602d00e45ec927bbd2340f710edfcb1d29c66947d3ded1d6d80d",
+      "attemptId": "synthetic-attempt-2",
+      "evidenceDigest": "30a7e7cd10c63607c3d6159981fab1a16c02f5f136ade1d9e87889aadf2e99bc",
+      "status": "review_ready",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "status": "completed"
+        }
+      ],
+      "records": [
+        {
+          "recordId": "row-2",
+          "pageNumber": 1,
+          "associationLocation": {
+            "groupIndex": 0,
+            "candidateIndex": 0
+          },
+          "values": {
+            "biomarkerCode": "SYNTH_BETA",
+            "biomarkerName": "Marcador fictício Beta",
+            "collectionDate": "2026-01-10",
+            "valueRaw": "< 0,05",
+            "valueNumeric": 0.05,
+            "resultType": "COMPARATOR",
+            "valueQualitative": null,
+            "comparator": "<=",
+            "refText": "inferior a 0,10",
+            "refMin": null,
+            "refMax": 0.1
+          },
+          "review_decision": "PENDING",
+          "confidence": 99
+        }
+      ]
+    },
+    {
+      "caseId": "synthetic-case-3",
+      "sourceSha256": "9aa401f2f8b95147d9d9abb7705b9befa55cd75d5738fc1fd28d4c2dba2b8670",
+      "attemptId": "synthetic-attempt-3",
+      "evidenceDigest": "b947e532f570dd126d4532425fbae9b533642ad3b506f14acb85d52836522630",
+      "status": "review_ready",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "status": "completed"
+        }
+      ],
+      "records": [
+        {
+          "recordId": "row-3",
+          "pageNumber": 1,
+          "associationLocation": {
+            "groupIndex": 0,
+            "candidateIndex": 0
+          },
+          "values": {
+            "biomarkerCode": "SYNTH_ZERO",
+            "biomarkerName": "Marcador fictício Zero",
+            "collectionDate": "2026-10-02",
+            "valueRaw": "0",
+            "valueNumeric": null,
+            "resultType": "NUMERIC",
+            "valueQualitative": null,
+            "comparator": "=",
+            "unit": "U/L",
+            "refText": null,
+            "refMin": null,
+            "refMax": null
+          },
+          "review_decision": "PENDING",
+          "confidence": 99
+        }
+      ]
+    }
+  ]
+}
